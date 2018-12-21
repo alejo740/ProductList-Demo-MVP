@@ -1,4 +1,4 @@
-package com.example.edwin_cobos.productlistdemo
+package com.edwin.cobos.productlistdemo
 
 import org.junit.Test
 

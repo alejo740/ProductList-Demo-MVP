@@ -1,4 +1,4 @@
-package com.example.edwin_cobos.productlistdemo
+package com.edwin.cobos.productlistdemo
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.example.edwin_cobos.productlistdemo", appContext.packageName)
+        assertEquals("com.edwin.cobos.productlistdemo", appContext.packageName)
     }
 }

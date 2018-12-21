@@ -1,8 +1,8 @@
-package com.example.edwin_cobos.productlistdemo.home.view
+package com.edwin.cobos.productlistdemo.home.view
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.example.edwin_cobos.productlistdemo.R
+import android.support.v7.app.AppCompatActivity
+import com.edwin.cobos.productlistdemo.R
 
 class MainActivity : AppCompatActivity() {
 
