@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_card_buttons">20dp</dimen>
+    <dimen name="margin_content_card">10dp</dimen>
+    <dimen name="card_description_text_size">13sp</dimen>
+    <dimen name="card_title_text_size">17sp</dimen>
+    <dimen name="card_promo_message_text_size">11sp</dimen>
+    <dimen name="card_bottom_description_text_size">13sp</dimen>
+</resources>
