@@ -53,28 +53,28 @@ class ProductListAdapter(val clickListener: (String) -> Unit) :
 
         fun bind(product: Product, clickListener: (String) -> Unit) {
             bindImage(product.backgroundImage)
-            if (product.topDescription.isNullOrBlank())
+            if (product.topDescription?.trim().isNullOrBlank())
                 topDescription.visibility = View.GONE
             else {
                 topDescription.visibility = View.VISIBLE
                 topDescription.text = product.topDescription
             }
 
-            if (product.title.isNullOrBlank())
+            if (product.title?.trim().isNullOrBlank())
                 title.visibility = View.GONE
             else {
                 title.visibility = View.VISIBLE
                 title.text = product.title
             }
 
-            if (product.promoMessage.isNullOrBlank())
+            if (product.promoMessage?.trim().isNullOrBlank())
                 promoMessage.visibility = View.GONE
             else {
                 promoMessage.visibility = View.VISIBLE
                 promoMessage.text = product.promoMessage
             }
 
-            if (product.bottomDescription.isNullOrBlank())
+            if (product.bottomDescription?.trim().isNullOrBlank())
                 bottomDescription.visibility = View.GONE
             else {
                 bottomDescription.visibility = View.VISIBLE

@@ -26,7 +26,9 @@
                     android:id="@+id/background_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:scaleType="centerCrop"
+                    android:background="@color/design_default_color_primary"
+                    android:layout_marginBottom="@dimen/card_image_margin"/>
 
             <TextView
                     android:id="@+id/description"
@@ -59,6 +61,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textSize="@dimen/card_bottom_description_text_size"
+                    android:layout_marginEnd="@dimen/margin_content_card"
+                    android:layout_marginStart="@dimen/margin_content_card"
+                    android:textAlignment="center"
                     android:text="bottom_description"/>
 
             <LinearLayout

@@ -6,4 +6,5 @@
     <dimen name="card_title_text_size">17sp</dimen>
     <dimen name="card_promo_message_text_size">11sp</dimen>
     <dimen name="card_bottom_description_text_size">13sp</dimen>
+    <dimen name="card_image_margin">10dp</dimen>
 </resources>
