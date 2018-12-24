@@ -5,6 +5,7 @@ This is a demo of using MVP in a basic sample of a product list.
   - Dagger2
   - RxJava
   - Retrofit
+  - OkHttp
   - Picasso
   - Kotlin
 
