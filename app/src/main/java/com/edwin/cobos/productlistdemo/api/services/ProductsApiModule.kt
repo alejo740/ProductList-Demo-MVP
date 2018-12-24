@@ -13,8 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class ProductsApiModule {
 
     companion object {
-        //private const val BASE_URL = "https://www.abercrombie.com/"
-        const val BASE_URL = "http://mumstudents.org/~986160/"
+        const val BASE_URL = "https://www.abercrombie.com/"
     }
 
     @Provides
@@ -26,18 +25,8 @@ class ProductsApiModule {
         return OkHttpClient.Builder().addInterceptor { chain ->
             val request = chain.request()
             val newRequest = request.newBuilder()
-                .header(":authority", "www.abercrombie.com")
-                .header(":method", "GET")
-                .header(":scheme", "https")
-                .header(":path", "/anf/nativeapp/qa/codetest/codeTest_exploreData.json")
-                .header("Content-Type", "application/json")
-                .header("cache-control", "no-cache")
-                .header("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8")
-                .header("accept-encoding:", "gzip, deflate, br")
-                .header("accept-language:", "en,es;q=0.9,es-419;q=0.8")
-                .header("upgrade-insecure-requests:", "1")
-                .header("User-Agent", "Android-Product-List-App")
-                .header("Accept", "application/vnd.yourapi.v1.full+json")
+                .header("Host", "www.abercrombie.com")
+                .header("User-Agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36")
                 .method(request.method(), request.body())
                 .build()
             chain.proceed(newRequest)
@@ -52,7 +41,7 @@ class ProductsApiModule {
             .baseUrl(baseURL)
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
-            //.client(client)
+            .client(client)
             .build()
     }
 

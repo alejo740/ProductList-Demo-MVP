@@ -7,8 +7,7 @@ import retrofit2.http.GET
 
 interface ProductsApiService {
 
-    //@GET("anf/nativeapp/qa/codetest/codeTest_exploreData.json")
-    @GET("codeTest_exploreData.json")
+    @GET("anf/nativeapp/qa/codetest/codeTest_exploreData.json")
     fun getProducts(): Observable<List<Product>>
 
 }
